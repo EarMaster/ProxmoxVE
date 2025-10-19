@@ -1,0 +1,39 @@
+{
+  "name": "Kitchen Owl",
+  "slug": "kitchenowl",
+  "categories": [
+    24
+  ],
+  "date_created": "2025-10-19",
+  "type": "ct",
+  "updateable": true,
+  "privileged": false,
+  "config_path": "/opt/kitchenowl/docker-compose.yml",
+  "interface_port": 8080,
+  "documentation": "https://kitchenowl.org/",
+  "website": "https://kitchenowl.org/",
+  "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/webp/kitchenowl.webp",
+  "description": "Kitchen Owl is a smart grocery list and recipe manager. Easily add items to your shopping list before you go shopping. You can also create recipes and add items from them directly to your shopping list. Kitchen Owl supports multiple users and households, making it perfect for families and shared living spaces.",
+  "install_methods": [
+    {
+      "type": "default",
+      "script": "ct/kitchenowl.sh",
+      "resources": {
+        "cpu": 2,
+        "ram": 2048,
+        "hdd": 6,
+        "os": "debian",
+        "version": "13"
+      }
+    }
+  ],
+  "default_credentials": {
+    "username": null,
+    "password": null
+  },
+  "notes": [
+    "Credentials are saved to /root/kitchenowl.creds",
+    "Uses Docker containers (Kitchen Owl + PostgreSQL)",
+    "First user registered becomes the admin"
+  ]
+}

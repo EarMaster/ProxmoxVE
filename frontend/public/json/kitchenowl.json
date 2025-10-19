@@ -21,7 +21,7 @@
       "resources": {
         "cpu": 2,
         "ram": 2048,
-        "hdd": 6,
+        "hdd": 8,
         "os": "debian",
         "version": "13"
       }
@@ -32,7 +32,7 @@
     "password": null
   },
   "notes": [
-    "Credentials are saved to /root/kitchenowl.creds",
+    "Database credentials are saved to /root/kitchenowl.creds",
     "Uses Docker containers (Kitchen Owl + PostgreSQL)",
     "First user registered becomes the admin"
   ]
